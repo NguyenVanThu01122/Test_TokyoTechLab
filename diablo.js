@@ -2,13 +2,10 @@ const diablo = (m, d, k, c) => {
   if (d === k && m > d) {
     return -1;
   }
-
   if (d < k) {
     return -1;
   }
-
   let count = 0;
-
   const maxKill = Math.round((d - 1) / k);
   while (m > maxKill) {
     count++;
@@ -17,7 +14,6 @@ const diablo = (m, d, k, c) => {
       break;
     }
   }
-
   return count * c;
 };
 
